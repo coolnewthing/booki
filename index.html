@@ -1,31 +1,203 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/desktop.css" />
-        <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css" /> -->
-        <!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css" />  -->
-        <script src="https://kit.fontawesome.com/69601b94e6.js" crossorigin="anonymous"></script>
-        <title>Booki</title>
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <img id="header-logo" src="assets/Booki@3x.png" alt="logo Booki">
-                <nav>
-                    <ul>
-                        <li class="active"><a href="">Hébergements</a></li>
-                        <li><a href="">Activités</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section id="location-search">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
-            </section>
-        </div>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Raleway"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/desktop.css" />
+		<!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css" /> -->
+		<!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css" />  -->
+		<script
+			src="https://kit.fontawesome.com/69601b94e6.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Booki</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<img id="header-logo" src="assets/Booki@3x.png" alt="logo Booki" />
+				<nav>
+					<ul>
+						<li class="active"><a href="">Hébergements</a></li>
+						<li><a href="">Activités</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="location-search">
+				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+				<p>En plein centre ville ou en pleine nature</p>
+				<div>
+					<form action="">
+						<span><i class="fa-solid fa-location-dot"></i></span>
+						<input
+							type="text"
+							id="location"
+							name="location"
+							placeholder="Marseille, France"
+						/>
+						<button>Rechercher</button>
+					</form>
+				</div>
+			</section>
+			<section id="filter-search">
+				<div id="filter-list">
+					<h2 id="filters-header">Filtres</h2>
+					<div class="filter-item">
+						<div class="filter-icon">
+							<i class="fa-solid fa-money-bill-wave"></i>
+						</div>
+						<div class="filter-text">
+							<h4>Economique</h4>
+						</div>
+					</div>
+					<div class="filter-item">
+						<div class="filter-icon"><i class="fa-solid fa-child"></i></div>
+						<div class="filter-text">
+							<h4>Familial</h4>
+						</div>
+					</div>
+					<div class="filter-item">
+						<div class="filter-icon"><i class="fa-solid fa-heart"></i></div>
+						<div class="filter-text">
+							<h4>Romantique</h4>
+						</div>
+					</div>
+					<div class="filter-item">
+						<div class="filter-icon"><i class="fa-solid fa-dog"></i></div>
+						<div class="filter-text">
+							<h4>Animaux autorisés</h4>
+						</div>
+					</div>
+				</div>
+				<p>
+					<span class="info-icon"><i class="fa-solid fa-info"></i></span>
+					Plus de 500 logements sont disponibles dans cette ville
+				</p>
+			</section>
+			<section id="search-results">
+				<div class="card">
+					<h2>Hébergements à Marseille</h2>
+					<div class="rental-list">
+						<div class="rental-item item-card">
+							<div>
+								<img
+									src="assets/rentals/medium/auberge-cannebiere.jpg"
+									alt="Auberge La Cannebière"
+								/>
+							</div>
+							<div>
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <span class="price">25€</span></p>
+								<div class="rating">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<span class="empty-star">
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="rental-item item-card">
+							<div>
+								<img
+									src="assets/rentals/medium/auberge-cannebiere.jpg"
+									alt="Auberge La Cannebière"
+								/>
+							</div>
+							<div>
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <span class="price">25€</span></p>
+								<div class="rating">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<span class="empty-star">
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="rental-item item-card">
+							<div>
+								<img
+									src="assets/rentals/medium/auberge-cannebiere.jpg"
+									alt="Auberge La Cannebière"
+								/>
+							</div>
+							<div>
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <span class="price">25€</span></p>
+								<div class="rating">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<span class="empty-star">
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="rental-item item-card">
+							<div>
+								<img
+									src="assets/rentals/medium/auberge-cannebiere.jpg"
+									alt="Auberge La Cannebière"
+								/>
+							</div>
+							<div>
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <span class="price">25€</span></p>
+								<div class="rating">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<span class="empty-star">
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Afficher plus</p>
+				</div>
+				<aside class="card">
+					<h2>Les plus populaires</h2>
+					<div class="popular-item item-card">
+						<div>
+							<img
+								src="assets/rentals/medium/hotel-soleil-du-matin.jpg"
+								alt="Auberge La Cannebière"
+							/>
+						</div>
+						<div>
+							<h3>Auberge La Cannebière</h3>
+							<p>Nuit à partir de <span class="price">25€</span></p>
+							<div class="rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<span class="empty-star">
+									<i class="fa-solid fa-star"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</section>
+		</div>
+	</body>
 </html>
