@@ -10,12 +10,23 @@ body {
 	max-width: 1200px;
 }
 
-h2 {
-	font-size: 18px;
+a {
+	text-decoration: none;
+}
+
+h2,
+h3 {
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
 }
 
 p {
-	color: #a7a7a7;
+	color: black;
 	font-size: 14px;
 	font-weight: 300;
 }
@@ -62,7 +73,7 @@ nav li.active > a {
 
 nav a {
 	text-decoration: none;
-	color: #333;
+	color: black;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -77,7 +88,7 @@ input#location {
 	padding: 5px;
 	font-weight: bold;
 	padding: 10px;
-	border: 1px solid lightgray;
+	border: 1px solid #f2f2f2;
 }
 
 form {
@@ -88,7 +99,7 @@ form {
 form > span {
 	align-self: center;
 	padding: 12px;
-	background-color: lightgray;
+	background-color: #f2f2f2;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
@@ -107,6 +118,7 @@ form > button {
 	border: none;
 	background-color: #0065fc;
 	color: #fff;
+	cursor: pointer;
 }
 
 /* Filters */
@@ -119,7 +131,6 @@ form > button {
 
 #filters-header {
 	display: flex;
-	font-size: 16px;
 	margin: 0;
 	justify-content: center;
 	align-items: center;
@@ -128,15 +139,25 @@ form > button {
 .filter-item {
 	display: flex;
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 .filter-text {
 	display: flex;
 	align-content: center;
-	border: 1px solid lightgray;
+	border: 2px solid lightgray;
 	border-left-style: none;
 	border-radius: 20px;
 	margin-left: -20px;
+}
+
+.filter-item:hover .filter-text {
+	background-color: #0065fc;
+	color: #fff;
+}
+
+.filter-item:hover .filter-icon {
+	background-color: lightgray;
 }
 
 .filter-text > h4 {
@@ -186,15 +207,15 @@ form > button {
 
 /* rentals list */
 
-#search-results {
+#hebergements {
 	display: flex;
 }
 
-#search-results > aside {
+#hebergements > aside {
 	flex: 1;
 }
 
-#search-results > div {
+#hebergements > div {
 	margin-right: 25px;
 	flex: 2.2;
 }
@@ -205,7 +226,7 @@ form > button {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 15px;
-	background-color: lightgray;
+	background-color: #f2f2f2;
 }
 
 .rental-list {
@@ -215,10 +236,14 @@ form > button {
 	gap: 25px;
 }
 
+.rental-list > a {
+	display: flex;
+	flex-basis: 30%;
+}
+
 .rental-item {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 30%;
 }
 
 .card h3 {
@@ -228,6 +253,7 @@ form > button {
 
 .rental-item > div:nth-child(1) {
 	display: flex;
+	flex: 2;
 }
 
 .rental-item > div:nth-child(2) {
@@ -250,6 +276,7 @@ form > button {
 	background-color: #fff;
 	padding: 4px;
 	border-radius: 15px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .rental-item img {
@@ -272,6 +299,7 @@ form > button {
 
 .popular-item {
 	display: flex;
+	margin-bottom: 30px;
 }
 
 .popular-item > div:nth-child(1) {
@@ -300,5 +328,15 @@ form > button {
 
 .item-card .price {
 	font-weight: bold;
-	color: #333;
+}
+
+.card > h4 {
+	margin-top: 25px;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
 }
