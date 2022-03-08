@@ -3,9 +3,10 @@ body {
 	display: flex;
 	justify-content: center;
 	font-family: "Raleway", sans-serif;
+	flex-wrap: wrap;
 }
 
-#container {
+.container {
 	width: 100%;
 	max-width: 1200px;
 }
@@ -18,7 +19,7 @@ h2,
 h3 {
 	color: black;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 h4 {
@@ -220,6 +221,10 @@ form > button {
 	flex: 2.2;
 }
 
+#hebergements h4 {
+	cursor: pointer;
+}
+
 .card {
 	padding-left: 25px;
 	padding-right: 25px;
@@ -339,4 +344,86 @@ form > button {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 10px;
+}
+
+/* Activités */
+
+#activites {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#activites > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#activites a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 22%;
+	max-width: 22%;
+}
+
+#activites .item-card {
+	flex-direction: column;
+	padding: 0;
+}
+
+.activity-item > div > img {
+	width: 100%;
+	max-height: 340px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.activity-item > div:nth-child(1) {
+	display: flex;
+	flex: 4;
+}
+
+.activity-item > div:nth-child(2) {
+	display: flex;
+	flex: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#activites h3 {
+	margin: 0;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer {
+	display: flex;
+	gap: 20%;
+}
+
+.footer ul {
+	padding: 0;
+}
+
+.footer li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.footer li a {
+	text-decoration: none;
+	color: black;
 }
