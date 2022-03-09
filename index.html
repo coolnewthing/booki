@@ -7,6 +7,11 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Raleway"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/desktop.css" />
 		<link
@@ -14,7 +19,11 @@
 			media="screen and (max-width: 992px)"
 			href="css/tablet.css"
 		/>
-		<!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css" />  -->
+		<link
+			rel="stylesheet"
+			media="screen and (max-width: 768px)"
+			href="css/mobile.css"
+		/>
 		<script
 			src="https://kit.fontawesome.com/69601b94e6.js"
 			crossorigin="anonymous"
@@ -22,16 +31,18 @@
 		<title>Booki</title>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container mobile-full-with">
 			<header>
 				<img id="header-logo" src="assets/Booki@3x.png" alt="logo Booki" />
 				<nav>
 					<ul>
-						<li class="active"><a href="#hebergements">Hébergements</a></li>
+						<li><a href="#hebergements">Hébergements</a></li>
 						<li><a href="#activites">Activités</a></li>
 					</ul>
 				</nav>
 			</header>
+		</div>
+		<div class="container">
 			<section id="location-search">
 				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 				<p>En plein centre ville ou en pleine nature</p>
@@ -44,7 +55,10 @@
 							name="location"
 							placeholder="Marseille, France"
 						/>
-						<button>Rechercher</button>
+						<button>
+							<i class="fa-solid fa-magnifying-glass show-mobile"></i>
+							<span class="hide-mobile">Rechercher</span>
+						</button>
 					</form>
 				</div>
 			</section>
@@ -79,12 +93,12 @@
 					</div>
 				</div>
 				<div>
-					<p>
-						<span class="info-icon"><i class="fa-solid fa-info"></i></span>
-						Plus de 500 logements sont disponibles dans cette ville
-					</p>
+					<span class="info-icon"><i class="fa-solid fa-info"></i></span>
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
 				</div>
 			</section>
+		</div>
+		<div class="container mobile-full-with">
 			<section id="hebergements">
 				<div class="card">
 					<div class="card-header">
@@ -293,7 +307,7 @@
 									/>
 								</div>
 								<div>
-									<h3>Hôtel Tout bleu Tout blanc</h3>
+									<h3>Hôtel Tout bleu et blanc</h3>
 									<p>Nuit à partir de <span class="price">68€</span></p>
 									<div class="rating">
 										<i class="fa-solid fa-star"></i>

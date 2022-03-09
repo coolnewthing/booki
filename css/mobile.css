@@ -1,0 +1,152 @@
+@media (max-width: 768px) {
+	.show-mobile {
+		display: block;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.mobile-full-with {
+		max-width: 100%;
+	}
+
+	.card {
+		border-radius: 0;
+	}
+
+	/* Header */
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	nav ul {
+		padding: 0;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	nav li {
+		display: flex;
+		padding-top: 0;
+		padding-bottom: 16px;
+		width: 100%;
+		justify-content: center;
+		font-size: 16px;
+		border-bottom: 4px solid #f2f2f2;
+	}
+
+	nav li:hover {
+		border-top: 0;
+		padding-top: 0;
+		border-bottom: 4px solid #0065fc;
+	}
+
+	#header-logo {
+		width: 20%;
+	}
+
+	nav li.active {
+		padding-top: 0;
+		border-top: 0;
+	}
+
+	/* Location form  */
+
+	#location-search {
+		margin-top: 0;
+	}
+
+	#location-search > div {
+		display: flex;
+		justify-content: center;
+	}
+
+	form {
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	form > button {
+		position: relative;
+		right: 5px;
+		border-radius: 12px;
+		font-size: 14px;
+		padding: 13px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	form > span {
+		padding-left: 15px;
+		padding-right: 15px;
+		border-top-left-radius: 13px;
+		border-bottom-left-radius: 13px;
+	}
+
+	input#location {
+		width: 100%;
+		border-right: 0;
+	}
+
+	/* Filter search */
+	#filters-header {
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	#filter-list {
+		gap: 10px;
+	}
+
+	#filter-search > div:nth-child(2) {
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#filter-search span {
+		align-self: flex-start;
+	}
+
+	/* Hébergements */
+
+	#hebergements {
+		flex-direction: column;
+	}
+
+	#hebergements > aside {
+		order: 1;
+	}
+
+	#hebergements > aside.card {
+		padding-bottom: 30px;
+	}
+
+	#hebergements > div {
+		margin-right: 0;
+		order: 2;
+		background-color: #fff;
+	}
+
+	.rental-list {
+		flex-direction: column;
+	}
+}
