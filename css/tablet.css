@@ -55,6 +55,7 @@
 	.popular-items {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: row;
 	}
 
 	.popular-items a {

@@ -60,7 +60,7 @@
 	}
 
 	#header-logo {
-		width: 20%;
+		height: 50px;
 	}
 
 	nav li.active {
@@ -116,6 +116,10 @@
 		gap: 10px;
 	}
 
+	.filter-text {
+		border: 2px solid lightgray;
+	}
+
 	#filter-search > div:nth-child(2) {
 		justify-content: center;
 		margin-top: 20px;
@@ -147,6 +151,49 @@
 	}
 
 	.rental-list {
+		flex-direction: column;
+	}
+
+	/* Popular items */
+	.popular-items {
+		gap: 10px;
+	}
+
+	/* Activities */
+
+	#activites {
+		margin-top: 0;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#activites > h2 {
+		margin-bottom: 20px;
+	}
+
+	#activites a {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	#activites > div {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.activity-item {
+		margin-bottom: 20px;
+	}
+
+	.activity-item > div:nth-child(1) {
+		max-height: 70%;
+	}
+
+	/* Footer */
+
+	.footer {
+		display: flex;
 		flex-direction: column;
 	}
 }

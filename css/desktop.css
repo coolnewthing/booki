@@ -189,7 +189,7 @@ form > button {
 	border: none;
 	padding: 10px;
 	color: #0065fc;
-	background-color: #f2f2f2;
+	background-color: #deebff;
 	z-index: 9;
 }
 
@@ -241,7 +241,7 @@ form > button {
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	border-radius: 15px;
 	background-color: #f2f2f2;
 }
@@ -251,7 +251,7 @@ form > button {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 20px;
+	row-gap: 20px;
 }
 
 .rental-list > a {
@@ -270,12 +270,14 @@ form > button {
 }
 
 .rental-item > div:nth-child(1) {
-	max-height: 100px;
 	display: flex;
-	flex: 2;
+	max-height: 100%;
+	flex: 1.5;
 }
 
 .rental-item > div:nth-child(2) {
+	display: flex;
+	flex-direction: column;
 	flex: 1;
 	padding: 5px;
 }
@@ -371,7 +373,7 @@ form > button {
 	margin-bottom: 10px;
 }
 
-/* Activités */
+/* Activities */
 
 #activites {
 	margin-top: 40px;
@@ -383,7 +385,6 @@ form > button {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	grid: 25px;
 }
 
 #activites a {
@@ -395,12 +396,9 @@ form > button {
 }
 
 #activites .item-card {
+	display: flex;
 	flex-direction: column;
 	padding: 0;
-}
-
-.activity-item > div:nth-child(1) {
-	max-height: 315px;
 }
 
 .activity-item > div > img {
@@ -409,14 +407,8 @@ form > button {
 	border-top-right-radius: 15px;
 }
 
-.activity-item > div:nth-child(1) {
-	display: flex;
-	flex: 4;
-}
-
 .activity-item > div:nth-child(2) {
 	display: flex;
-	flex: 1;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
