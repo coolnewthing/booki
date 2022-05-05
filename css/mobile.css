@@ -171,7 +171,7 @@
 		margin-bottom: 20px;
 	}
 
-	#activites a {
+	#activites .column {
 		flex-basis: 100%;
 		max-width: 100%;
 	}

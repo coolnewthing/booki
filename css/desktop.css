@@ -76,6 +76,10 @@ nav li:hover {
 	padding-top: 33px;
 }
 
+nav li:hover > a {
+	color: #0065fc;
+}
+
 nav li.active > a {
 	color: #0065fc;
 }
@@ -219,7 +223,6 @@ form > button {
 }
 
 /* Hébergements */
-
 #hebergements {
 	display: flex;
 }
@@ -259,13 +262,17 @@ form > button {
 	flex-basis: 31%;
 }
 
+.item-link:hover h3 {
+	color: #0065fc;
+}
+
 .rental-item {
 	display: flex;
 	flex-direction: column;
 }
 
 .card h3 {
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0;
 }
 
@@ -385,9 +392,10 @@ form > button {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	row-gap: 50%;
 }
 
-#activites a {
+#activites .column {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -409,9 +417,11 @@ form > button {
 
 .activity-item > div:nth-child(2) {
 	display: flex;
+	align-content: center;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #activites h3 {
@@ -447,4 +457,8 @@ footer {
 .footer li a {
 	text-decoration: none;
 	color: black;
+}
+
+.footer li a:hover {
+	color: #0065fc;
 }
